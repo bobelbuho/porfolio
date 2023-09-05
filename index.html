@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00be6719c0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -66,6 +67,51 @@
             </div>
         </div>
     </div>
+    <!---------------------SERVICES ---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                    <h2>Web Desing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam doloribus nemo perspiciatis at necessitatibus vero in debitis quae,
+                         molestias fuga corporis laudantium, reiciendis temporibus est incidunt numquam, sapiente repudiandae!</p>
+                         <a href="#">Lean more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Desing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam doloribus nemo perspiciatis at necessitatibus vero in debitis quae,
+                         molestias fuga corporis laudantium, reiciendis temporibus est incidunt numquam, sapiente repudiandae!</p>
+                         <a href="#">Lean more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Desing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laboriosam doloribus nemo perspiciatis at necessitatibus vero in debitis quae,
+                         molestias fuga corporis laudantium, reiciendis temporibus est incidunt numquam, sapiente repudiandae!</p>
+                         <a href="#">Lean more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
     
 </body>
 </html>
