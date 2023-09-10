@@ -271,4 +271,7 @@ width: 100%;
     color: #ff004f;
     transform: translateY(-5px);
 }
-.social-icons
+btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
